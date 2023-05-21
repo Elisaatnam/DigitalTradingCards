@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Digital Trading Cards</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="background-image"></div>
+			<section class="create">
+				<h1>Create your own digital trading cards</h1>
+				<form onsubmit="createNewCard(); return false">
+					<label for="name">Name</label>
+					<input type="text" id="name" required />
+					<label for="sport">Sport</label>
+					<input type="text" id="sport" required />
+					<label for="infos">Additional information</label>
+					<input type="text" id="infos" />
+					<label for="image">Image URL</label>
+					<input type="text" id="image" required />
+					<button type="submit">Create Card</button>
+				</form>
+			</section>
+			<section class="output"></section>
+		</div>
+
+		<script type="text/javascript" src="./assets/js/main.js"></script>
+	</body>
+</html>
